@@ -18,9 +18,23 @@ public class PracticingJava {
     //Multiplication table
     public static void main(String[] args) {
         
+        System.out.println("Timetable: ");
         Timetable timetable1 = new Timetable();
-        timetable1.createTimetable();
-        
+        timetable1.createTimetable();   
+
+        System.out.println("");
+        System.out.println("Looping through an array");
+        Loopy loopy1 = new Loopy();
+        loopy1.LoopThroughArray();
+       
+
+    }
+    
+}
+
+class Timetable
+{
+    void createTimetable() {
         //Multiplication table
         for (int row = 1; row < 11; row++) {
            
@@ -34,26 +48,30 @@ public class PracticingJava {
             }
             System.out.println();
         }
+    }
+}
 
-        
-        
-//       int [] numArr = {
-//        10,
-//        20,
-//        30,
-//        40,
-//        50,
-//        60,
-//        70,
-//        80
-//       };
-//       
-////       int i = 0;
-////       while (i < numArr.length) {
-////           System.out.println(numArr[i]);
-////           i++;
-////       }
-//       
+class Loopy {
+    
+    void LoopThroughArray() {
+
+       int [] numArr = {
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80
+       };
+       
+       int i = 0;
+       while (i < numArr.length) {
+           System.out.println(numArr[i]);
+           i++;
+       }
+       
 ////       for (int i = 0; i < numArr.length; i++) {
 ////            System.out.println(numArr[i]);
 ////       }
@@ -61,13 +79,5 @@ public class PracticingJava {
 //         for (int arrElement: numArr) {
 //             System.out.println(arrElement);
 //         }   
-    }
-    
-}
-
-class Timetable
-{
-    void createTimetable() {
-        System.out.println("test");
     }
 }
